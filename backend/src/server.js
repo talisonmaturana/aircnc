@@ -10,7 +10,7 @@ const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
-mongoose.connect('mongodb+srv://talison:123@cluster0-ued3b.mongodb.net/week9?retryWrites=true&w=majority', {
+mongoose.connect('<your-mongodb-url>', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
